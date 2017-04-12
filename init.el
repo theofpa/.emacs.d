@@ -13,6 +13,7 @@
     py-autopep8
     elpy
     ein
+    markdown-mode
     flycheck))
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
@@ -49,3 +50,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; Added by Kite
+(load-file "~/.emacs.d/kite.el")
